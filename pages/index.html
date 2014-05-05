@@ -6,124 +6,24 @@
 	]
 }</script>
 
-<div id="banner-secondary" class="row">
-	<div class="downloads-box four columns push-eight">
-		<div class="download-main">
-			<a href="/download/" class="button large">
-				<span class="download"></span>
-				Download jQuery
-				<span>v1.11.0 or v2.1.0</span>
-			</a>
-			<div class="download-options">
-				<a href="http://github.com/jquery/jquery">View Source on GitHub →</a>
-				<a href="http://learn.jquery.com/about-jquery/how-jquery-works/">How jQuery Works →</a>
-			</div>
-		</div>
-	</div>
-	<div class="features-box row eight columns pull-four">
-		<div class="feature-box lightweight-footprint four columns center-txt">
-			<div class="feature-box-image"></div>
-			<h3>Lightweight Footprint</h3>
-			<p>Only 32kB minified and gzipped. Can also be included as an AMD module</p>
-		</div>
-
-		<div class="feature-box css3-compliant four columns center-txt">
-			<div class="feature-box-image"></div>
-			<h3>CSS3 Compliant</h3>
-			<p>Supports CSS3 selectors to find elements as well as in style property manipulation</p>
-		</div>
-
-		<div class="feature-box cross-browser four columns center-txt">
-			<div class="feature-box-image"></div>
-			<h3>Cross-Browser</h3>
-			<p><a href="/browser-support/">IE, Firefox, Safari, Opera, Chrome, and more</a></p>
-		</div>
-	</div>
+<div id="banner-secondary">
+	<img src="http://www.f-covers.com/cover/star-wars-lego-sign-stormtrooper-station-facebook-cover-timeline-banner-for-fb.jpg" style="display:inline-block; vertical-align:top;" class="brick width-15 height-6"/>
+	<brick class="blue width-15 height-4" style="display:inline-block; left:30px; position:relative">
+		<brick1 class="dark height-2" style="margin-bottom:32px;">Welcome to Uglymongrel.com</brick1>
+		<brick1 class="brick height-1 grey">BUILT WITH LEGOS!</brick1>
+	</brick>
 </div>
 
-<div id="home-content" class="clearfix row">
-	<section class="eight columns">
-		<h2 class="block">What is jQuery?</h2>
+<brick id="home-content" class="grey ui-content padding:16px; margin:32px;">
+	<img src="/uglymongrel-wp-content/themes/uglymongrel/images/hunter012.JPG" width="25%" style="float:right" class="width-9 height-12"/>
+	<brick class="width-20 height-1 white content-plate"><p>Welcome to the all new uglymongrel.com</p></brick>
+	<brick class="white width-20 height-3 content-plate"><p>I'm sure many of you right now are wondering about the name of this site. Well its actually a pretty short story. I't is actually a term of endearment to my dog Hunter.  He is my constant coding companion.</p></brick>
+	<brick class="white width-20 height-3 content-plate"><p>But more important then the name of this site is what we have to offer. In addition to hosting my own plugins and widgets here ( mostly for jQuery mobile ). I have also decided to provide a download builder so that any jquery mobile plugin or widget hosted here can be bundled into a custom build of jQuery mobile using the same download builder as on jquerymobile.com</p></brick>
+	<brick class="white width-20 height-2 content-plate"><p>In addition to the custom builder everything we will also be hosting full api documentation for all plugins and widgets</p></brick>
 
-		<p>jQuery is a fast, small, and feature-rich JavaScript library. It makes
-		things like HTML document traversal and manipulation, event handling,
-		animation, and Ajax much simpler with an easy-to-use API that works across
-		a multitude of browsers. With a combination of versatility and
-		extensibility, jQuery has changed the way that millions of people write
-		JavaScript.</p>
+	<brick class="white width-35 height-2 content-plate"><p>Do you have a widget or plugin for jQuery mobile and would like to have the same abilities for your plugin file an issue and add your plugin or iwdget to uglymongrel.com too!</p></brick>
 
-		<h2 class="block">Corporate Members</h2>
-		<!--corporate-members-->
-		<p>Support from our corporate members makes it possible for the jQuery
-		Foundation to continue our work on our JavaScript libraries and pushing
-		the open web forward with events and participation in the standards process.
-		View our <a href="https://jquery.org/members/">members page</a> for a full
-		list of corporate and individual members.</p>
+	<brick class="white width-35 height-2 content-plate"><p>Along with the plugin and widget goodness you will find some other open source projects hosted here like the awesome lego theme you are viewing now ( check it out in firefox inspectors 3d view!!! )</p></brick>
 
-		<h2 class="block">Other jQuery Foundation Projects</h2>
-		<section class="project-tiles row">
-			<div class="project-tile six columns color secondary-orange">
-				<a href="//jqueryui.com" class="jqueryui small logo">jQueryUI</a>
-			</div>
-			<div class="project-tile six columns color secondary-green">
-				<a href="//jquerymobile.com" class="jquery-mobile small logo">jQuery Mobile</a>
-			</div>
-		</section>
-		<section class="project-tiles row">
-			<div class="project-tile six columns color qunit-secondary-purple">
-				<a href="//qunitjs.com" class="qunitjs small logo">QUnit</a>
-			</div>
-			<div class="project-tile six columns color sizzle-red">
-				<a href="//sizzlejs.com" class="sizzlejs small logo">Sizzle</a>
-			</div>
-		</section>
-	</section>
-	<aside class="four columns resources">
-		<h3>Resources</h3>
-		<ul>
-			<li><a href="http://api.jquery.com">jQuery Core API Documentation</a></li>
-			<li><a href="http://learn.jquery.com">jQuery Learning Center</a></li>
-			<li><a href="http://blog.jquery.com">jQuery Blog</a></li>
-			<li><a href="http://contribute.jquery.com">Contribute to jQuery</a></li>
-			<li><a href="http://jquery.org">About the jQuery Foundation</a></li>
-			<li><a href="http://bugs.jquery.com">Browse or Submit jQuery Bugs</a></li>
-			<li class="try-jquery"><a href="http://try.jquery.com">Try jQuery</a></li>
-		</ul>
-
-	</aside>
-</div>
-
-<section>
-	<h2 class="block">A Brief Look</h2>
-
-	<h3>DOM Traversal and Manipulation</h3>
-	<p>Get the <code>&lt;button&gt;</code> element with the class 'continue' and change its HTML to 'Next Step...'</p>
-	<pre><code>$( "button.continue" ).html( "Next Step..." )</code></pre>
-
-	<h3>Event Handling</h3>
-	<p>Show the <code>#banner-message</code> element that is hidden with
-		<code>display:none</code> in its CSS when any button in <code>#button-container</code> is
-		clicked.</p>
-	<pre><code>
-	var hiddenBox = $( "#banner-message" );
-	$( "#button-container button" ).on( "click", function( event ) {
-		hiddenBox.show();
-	});
-	</pre></code>
-
-	<h3>Ajax</h3>
-	<p>Call a local script on the server <code>/api/getWeather</code>
-		with the query parameter <code>zipcode=97201</code>
-		and replace the element <code>#weather-temp</code>'s html with the returned text.</p>
-	<pre><code>
-	$.ajax({
-		url: "/api/getWeather",
-		data: {
-			zipcode: 97201
-		},
-		success: function( data ) {
-			$( "#weather-temp" ).html( "&lt;strong>" + data + "&lt;/strong> degrees" );
-		}
-	});
-	</pre></code>
-</section>
+	<brick class="white width-35 height-2 content-plate"><p>In addition you may occasionally see a blog post or article with me ranting about something and generaly anything else related to website or app development that happens to string my fancy</p></brick>
+</brick>
