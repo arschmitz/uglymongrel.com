@@ -1,5 +1,5 @@
 $( function( $ ) {
-	var host = "http://amd-builder.jquerymobile.com",
+	var host = "http://192.3.9.87:3000",
 		dependencyMap,
 		builderhtml = [],
 		sortable = [],
@@ -146,7 +146,7 @@ $( function( $ ) {
 		},
 		refreshForm = function() {
 			var branch = $( "#branch option:selected" ).val() || "master";
-			$.getJSON( host + '/v1/dependencies/jquery/jquery-mobile/' + branch + '/?baseUrl=js' ).done(
+			$.getJSON( host + '/v1/dependencies/arschmitz/uglymongrel-jquery-mobile/' + branch + '/?baseUrl=js' ).done(
 				function( data ) {
 					dependencyMap = data;
 					// Clean up deps attr from relative paths and plugins
@@ -242,7 +242,7 @@ $( function( $ ) {
 
 			$( "#download" ).html(
 				$( "<iframe>" )
-					.attr( "src", host + '/v1/bundle/jquery/jquery-mobile/' + ref + '/jquery.mobile.custom.zip?' + $.param( config ) )
+					.attr( "src", host + '/v1/bundle/arschmitz/uglymongrel-jquery-mobile/' + ref + '/jquery.mobile.custom.zip?' + $.param( config ) )
 			);
 
 			// I could not leverage iframe.onload to re-enable the button :-/
